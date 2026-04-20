@@ -80,16 +80,11 @@ Govno mamonta/
 │   ├── DiscordRPC.dll                 # Библиотека Discord Rich Presence
 │   └── SayurinChecker.csproj
 │
-├── Release/                           # Собранный билд, 6.5 MB
-│   └── SayurinChecker.exe
-│
-├── Site/                              # Склонирован github.com/mujqk/SayurinOwnChecker
+├── Site/                              # github.com/mujqk/SayurinOwnChecker
 │   ├── index.html                     # Лендинг на GitHub Pages
 │   ├── styles.css, script.js
 │   ├── history.json                   # Changelog
 │   └── screen1..6.png                 # Скрины интерфейса
-│
-└── Dumps/                             # Оригинальные бинарники + зависимости .NET 9
 ```
 
 ## Что внутри нашлось
