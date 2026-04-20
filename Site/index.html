@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayurinChecker - Лучший чекер для Baza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="glow-point top-left"></div>
+    <div class="glow-point bottom-right"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-accent">SAYURIN</span>CHECKER
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item active" onclick="showTab('home')">Главная</a>
+            <a href="#" class="nav-item" onclick="showTab('reports')">Отчеты</a>
+            <a href="https://github.com/Mujqk/SayurinOwnChecker" class="nav-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </nav>
+
+    <div id="home-tab" class="tab-content active">
+        <main class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Проверяй ПК на <br><span class="text-gradient">максимальной</span> скорости</h1>
+            <p class="hero-subtitle">Инструмент нового поколения для глубокой проверки системы. Моментальные отчеты, защита от обхода и современный дизайн.</p>
+            
+            <div class="cta-group">
+                <a href="#" id="download-btn" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Скачать для Windows
+                </a>
+                <a href="#features" class="btn btn-secondary">Подробнее</a>
+            </div>
+            <div class="badge">
+                <span class="pulse"></span> 
+                <span id="version-badge">v3.4.3 Доступна</span>
+            </div>
+            <p class="download-info">Размер: ~35 MB &bull; Требуется Windows 10/11</p>
+        </div>
+        
+        <div class="hero-image-container">
+            <div class="glass-panel app-mockup slider-mockup">
+                <div class="mockup-header">
+                    <div class="mockup-dots"><span></span><span></span><span></span></div>
+                    <div class="mockup-title">SayurinChecker - Screenshots</div>
+                </div>
+                <div class="slider-container">
+                    <button class="slider-arrow prev" id="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slides-wrapper">
+                        <img src="screen1.png" alt="Screen 1" class="slider-img active">
+                        <img src="screen2.png" alt="Screen 2" class="slider-img">
+                        <img src="screen3.png" alt="Screen 3" class="slider-img">
+                        <img src="screen4.png" alt="Screen 4" class="slider-img">
+                        <img src="screen5.png" alt="Screen 5" class="slider-img">
+                        <img src="screen6.png" alt="Screen 6" class="slider-img">
+                    </div>
+                    <button class="slider-arrow next" id="next-slide"><i class="fas fa-chevron-right"></i></button>
+                    
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                        <span class="dot" data-index="5"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-badge badge-1"><i class="fas fa-microchip"></i> Hardware Scan</div>
+            <div class="floating-badge badge-2"><i class="fas fa-shield-alt"></i> Anti-Bypass</div>
+        </div>
+    </main>
+
+
+
+    <section id="features" class="features-section">
+        <h2 class="section-title">Почему <span class="text-gradient">SayurinChecker?</span></h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon purple"><i class="fas fa-bolt"></i></div>
+                <h3>Высокая скорость</h3>
+                <p>Асинхронные проверки и оптимизированные алгоритмы позволяют собирать все данные о системе за считанные секунды.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon green"><i class="fas fa-lock"></i></div>
+                <h3>Anti-Bypass Защита</h3>
+                <p>Инновационные методы обнаружения спуферов, скрытых виртуальных машин и попыток подмены железа (HWID).</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon blue"><i class="fas fa-desktop"></i></div>
+                <h3>Современный UI</h3>
+                <p>Премиальный темный дизайн с глассморфизмом, плавной анимацией и продуманным расположением элементов управления.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon green"><i class="fas fa-shield-virus"></i></div>
+                <h3>Чистота 0/72</h3>
+                <p>Полное отсутствие детектов на VirusTotal. SayurinChecker абсолютно безопасен для вашей системы и не содержит вредоносного кода.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon purple"><i class="fab fa-steam"></i></div>
+                <h3>Steam Анализ</h3>
+                <p>Мгновенный вывод списка аккаунтов с детальной историей банов на проекте. Узнайте всё о прошлом любого профиля за секунды.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon blue"><i class="fas fa-toolbox"></i></div>
+                <h3>16+ Программ</h3>
+                <p>Интегрированный набор из 16 профессиональных утилит для глубокой проверки ПК с удобными и быстрыми буферами обмена.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    </div> <!-- End home-tab -->
+
+    <div id="reports-tab" class="tab-content" style="display:none">
+        <section class="reports-section">
+            <h2 class="section-title">Панель <span class="text-gradient">отчетов</span></h2>
+            <div class="search-container">
+                <input type="text" id="report-search" placeholder="Поиск по SteamID..." oninput="filterReports()">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="glass-panel reports-table-container">
+                <table id="reports-table">
+                    <thead>
+                        <tr>
+                            <th>Игрок</th>
+                            <th>SteamID</th>
+                            <th>Дата</th>
+                            <th>Статус</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reports-body">
+                        <!-- Loaded from history.json -->
+                        <tr>
+                            <td colspan="5" style="text-align:center; padding: 40px; color: #666;">Загрузка отчетов...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><span class="logo-accent">SAYURIN</span>CHECKER</div>
+            <p>Created by Naze Sayurin? &copy; 2026</p>
+            <p class="footer-thanks">Особая благодарность: Людоед (QA) и Baza Admin Team.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            
+            document.getElementById(tabId + '-tab').style.display = 'block';
+            event.currentTarget.classList.add('active');
+
+            if (tabId === 'reports') {
+                loadHistory();
+            }
+        }
+
+        async function loadHistory() {
+            const tableBody = document.getElementById('reports-body');
+            const BRIDGE_URL = "https://script.google.com/macros/s/AKfycby2Qh1NUKCbxwXvpX1HLpHU5H2bg6CemUyzFLu_9hsLvuHL7Z4cd6248GwnYAOBh27h3Q/exec";
+            
+            try {
+                // Fetch from live Google Script Bridge with explicit redirect following
+                const response = await fetch(BRIDGE_URL, { redirect: 'follow' });
+                if (!response.ok) throw new Error('Network response was not ok');
+                
+                const history = await response.json();
+                
+                if (!history || history.length === 0) {
+                    tableBody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 40px; color: #94a3b8;">Активных отчетов пока нет.</td></tr>';
+                    return;
+                }
+
+                tableBody.innerHTML = history.map(entry => {
+                    const statusClass = entry.Verdict.toLowerCase().includes('чист') ? 'clean' : 
+                                      entry.Verdict.toLowerCase().includes('подозр') ? 'warning' : 'danger';
+                    
+                    return `
+                        <tr>
+                            <td class="player-cell">${entry.PlayerName}</td>
+                            <td class="id-cell">${entry.SteamId}</td>
+                            <td>${entry.Date}</td>
+                            <td><span class="status-badge ${statusClass}">${entry.Verdict}</span></td>
+                            <td><a href="${entry.Link}" class="btn-report" target="_blank">Открыть</a></td>
+                        </tr>
+                    `;
+                }).join('');
+            } catch (e) {
+                console.error("Fetch error:", e);
+                tableBody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 40px; color: #ef4444;">' +
+                                    'Ошибка загрузки базы данных отчетов.<br>' +
+                                    '<span style="font-size: 13px; color: #94a3b8; font-weight: normal;">' +
+                                    'Убедитесь, что в Google Script выбран доступ "Все" (Anyone).</span></td></tr>';
+            }
+        }
+
+        function filterReports() {
+            const filter = document.getElementById('report-search').value.toUpperCase();
+            const rows = document.getElementById('reports-body').getElementsByTagName('tr');
+            for (let i = 0; i < rows.length; i++) {
+                const idCell = rows[i].getElementsByTagName('td')[1];
+                if (idCell) {
+                    const textValue = idCell.textContent || idCell.innerText;
+                    rows[i].style.display = textValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

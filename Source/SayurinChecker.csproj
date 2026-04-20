@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SayurinChecker</AssemblyName>
+    <RootNamespace>BazaChecker</RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>CS8618;CS8632;CS8981;CS0168;CS8600;CS8601;CS8602;CS8603;CS8604;CS8625;CS0649;CS4014;SYSLIB0014;MSB3277</NoWarn>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ApplicationIcon>SayurinChecker.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="9.0.0" />
+    <Reference Include="DiscordRPC">
+      <HintPath>DiscordRPC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\**\*.png" />
+    <Resource Include="assets\**\*.ttf" />
+    <Resource Include="logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="BazaChecker\App.xaml" />
+    <ApplicationDefinition Include="BazaChecker\App.xaml" />
+  </ItemGroup>
+</Project>
